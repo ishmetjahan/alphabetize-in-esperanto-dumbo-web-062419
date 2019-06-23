@@ -5,5 +5,7 @@ def alphabetize(arr)
   
   arr.sort_by do |ele|
     ele.split(" ").collect do |letter|
-      esp_alp.index 
+      esp_alp.index(letter)
+    end
+  end
 end
