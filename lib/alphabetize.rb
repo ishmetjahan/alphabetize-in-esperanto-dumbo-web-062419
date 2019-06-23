@@ -4,7 +4,7 @@ def alphabetize(arr)
   p", "r"," s"," ŝ", "t", "u"," ŭ", "v", "z"]
   
   arr.sort_by do |ele|
-    ele.split(" ").collect do |letter|
+    ele.split("").collect do |letter|
       esp_alp.index(letter)
     end
   end
